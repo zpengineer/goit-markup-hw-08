@@ -1,8 +1,10 @@
 @media screen and (min-width: 480px) {
   .container {
-    max-width: none;
+    width: 480px;
   }
+}
 
+@media screen and (max-width: 767px) {
   .container__title {
     @include fontStyle(700, 28px, 33px, 0.03em, none);
 

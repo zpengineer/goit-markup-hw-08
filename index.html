@@ -10,12 +10,18 @@
   <body>
     <!--Шапка сайта-->
     <header class="page-header">
-      <div class="container page-header__cont">
+      <div class="container desktop-nav">
         <nav class="main-nav">
 
             <a class="header-logo" href="./index.html">
               Web<span class="header-logo__text">Studio</span>
             </a>
+
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg width="40" height="40">
+                <use href="./img/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
             
             <ul class="site-nav">
               <li class="site-nav__item">
@@ -671,9 +677,56 @@
     
     </div>
 
-    <!-- Скрипт для модального окна и шапки -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="20" height="20">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Контакты</a>
+        </li>
+      </ul>
 
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--active">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link">Facebook</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Скрипт для модального окна и шапки -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/header.js"></script> -->
 
   </body>

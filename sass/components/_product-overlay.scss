@@ -12,7 +12,8 @@
 
   transform: translateY(100%);
   visibility: hidden;
-  transition: transform 250ms $timing-function, visibility 250ms $timing-function;
+  // transition: transform 250ms $timing-function, visibility 250ms $timing-function;
+  @include animation($properties: 'transform, visibility');
 
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
