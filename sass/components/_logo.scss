@@ -1,0 +1,26 @@
+%logo {
+  font-family: Raleway;
+  @include fontStyle(700, 26px, 31px, 0.03em);
+
+  text-decoration: none;
+}
+
+.header-logo {
+  @extend %logo;
+  color: $accent-color;
+}
+
+.footer-logo {
+  @extend %logo;
+  display: block;
+  margin-bottom: 20px;
+  color: $accent-color;
+}
+
+.header-logo__text {
+  color: $black-color;
+}
+
+.footer-logo__text {
+  color: $white-color;
+}

@@ -1,0 +1,42 @@
+.portfolio-links {
+  @extend %lists;
+  // @include centeredFlex();
+
+  // margin-bottom: 34px;
+}
+
+.portfolio-links__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.portfolio-links__btn {
+  @extend %button;
+
+  @include fontStyle(500, 16px, 26px, 0.03em);
+
+  text-align: center;
+
+  min-width: 73px;
+  padding: 6px 32px;
+
+  background-color: $button-bg-color;
+  color: $title-text-color;
+
+  transition: background-color 250ms $timing-function, color 250ms $timing-function,
+    box-shadow 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+    box-shadow: $button-shadow;
+  }
+}
+
+.portfolio-links__btn--current {
+  background-color: $accent-color;
+  color: $white-color;
+  box-shadow: $button-shadow;
+}

@@ -1,0 +1,22 @@
+.page-header {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // z-index: 1;
+
+  width: 100%;
+  min-height: 80px;
+
+  border-bottom: 1px solid $border-color;
+  background-color: $white-color;
+}
+
+// .page-header__cont {
+//   @include centeredFlex(flex, space-between);
+// }
+
+// .main-nav {
+//   display: flex;
+//   align-items: center;
+//   margin-right: auto;
+// }

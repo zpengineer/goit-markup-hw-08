@@ -1,0 +1,7 @@
+@media (max-width: 480px) {
+  .card-set__item {
+    &:not(last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

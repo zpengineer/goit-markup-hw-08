@@ -1,0 +1,31 @@
+@mixin centeredFlex($type: flex, $justify: center, $aling: center) {
+  display: $type;
+  justify-content: $justify;
+  align-items: $aling;
+}
+
+@mixin alingCards($variable, $value) {
+  flex-basis: calc(100% / #{$variable} - #{$value});
+
+  margin-left: $value;
+  margin-top: $value;
+}
+
+@mixin negativeMargin($value: 30px) {
+  margin-left: -1 * $value;
+  margin-top: -1 * $value;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ' ') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin fontStyle($weight, $size, $height, $spacing, $transform: none) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height / $size;
+  letter-spacing: $spacing;
+  text-transform: $transform;
+}

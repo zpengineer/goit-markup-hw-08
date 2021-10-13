@@ -1,0 +1,11 @@
+.backdrop__modal {
+  @media screen and(max-width:480px) {
+    width: 93.75%;
+    height: 609px;
+  }
+}
+
+// .checkbox-label {
+//   @media screen and(max-width:480px) {
+//     @include fontStyle(400, 12px, 14px, 0.03em);
+// }

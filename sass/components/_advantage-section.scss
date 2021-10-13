@@ -1,0 +1,44 @@
+.advantage-cards {
+  @extend %lists;
+  // display: flex;
+  // flex-wrap: wrap;
+
+  // @include negativeMargin();
+}
+
+.container__title--hidden {
+  @extend %visually-hidden;
+}
+
+// .advantage-cards__item {
+//   // @include alingCards(3, 30px);
+
+//   max-width: 270px;
+// }
+
+.advantage-cards__thumb {
+  @include centeredFlex();
+
+  // max-width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+  background-color: $button-bg-color;
+}
+
+.advantage-cards__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @include fontStyle(700, 14px, 16px, 0.03em, uppercase);
+
+  color: $title-text-color;
+}
+
+.advantage-cards__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include fontStyle(400, 14px, 24px, 0.03em);
+}

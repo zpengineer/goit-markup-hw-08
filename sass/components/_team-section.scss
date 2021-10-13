@@ -1,0 +1,45 @@
+.team-cards {
+  @extend %lists;
+  // display: flex;
+  // flex-wrap: wrap;
+
+  // @include negativeMargin();
+}
+
+.team-cards__item {
+  // @include alingCards(4, 30px);
+
+  box-shadow: $card-shadow;
+  border-radius: $card-radius;
+
+  background-color: $white-color;
+
+  /* outline: 2px solid green; */
+}
+
+.team-cards__img {
+  margin-top: 0;
+}
+
+.card-content__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @include fontStyle(500, 16px, 19px, 0.03em);
+
+  color: $title-text-color;
+}
+
+.card-content__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  @include fontStyle(400, 16px, 19px, 0.03em);
+}
+
+.card-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACE,MAAM,EAAE,SAAS,EAAE,KAAK;EAD1B,AAAA,mBAAmB,CAAC;IAEhB,aAAa,EAAE,IAAI;GAEtB",
+    "sources": [
+        "../sass/mobile/social-block-m.scss"
+    ],
+    "names": [],
+    "file": "social-block-m.css"
+}

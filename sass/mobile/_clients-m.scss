@@ -1,0 +1,24 @@
+.clients-cards {
+  @media screen and(max-width:480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.clients-cards__item {
+  @media (max-width: 480px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  // &:not(:last-child) {
+  //   @media screen and (max-width: 767px) {
+  //     margin-bottom: 30px;
+  //   }
+  // }
+}
+
+// .clients-cards__item {
+//   @include alingCards(6, 30px);
+// }

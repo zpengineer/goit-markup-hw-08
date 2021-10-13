@@ -1,0 +1,32 @@
+.clients-cards {
+  @extend %lists;
+  // display: flex;
+  // flex-wrap: wrap;
+
+  // @include negativeMargin();
+}
+
+// .clients-cards__item {
+//   @include alingCards(6, 30px);
+// }
+
+.clients-cards__link {
+  @include centeredFlex();
+
+  cursor: pointer;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $icon-primary-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  fill: $icon-primary-color;
+
+  transition: border 250ms $timing-function, fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+}

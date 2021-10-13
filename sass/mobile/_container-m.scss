@@ -1,0 +1,11 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: none;
+  }
+
+  .container__title {
+    @include fontStyle(700, 28px, 33px, 0.03em, none);
+
+    margin-bottom: 30px;
+  }
+}
