@@ -1,0 +1,13 @@
+@media (min-width: 768px) and (max-width: 1599px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .container__title {
+    @include fontStyle(700, 28px, 33px, 0.03em, none);
+
+    margin-bottom: 30px;
+  }
+}

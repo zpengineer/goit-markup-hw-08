@@ -1,0 +1,16 @@
+.advantage-cards {
+  @media screen and(min-width:1600px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include negativeMargin();
+  }
+}
+
+.advantage-cards__item {
+  @media (min-width: 1600px) {
+    @include alingCards(4, 30px);
+
+    // max-width: 270px;
+  }
+}

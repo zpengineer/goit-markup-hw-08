@@ -49,8 +49,8 @@
   color: $white-color;
 }
 
-// .footer-address__item {
-//   &:not(:last-child) {
-//     margin-bottom: 9px;
-//   }
-// }
+.footer-address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}

@@ -1,0 +1,21 @@
+.clients-cards {
+  @media screen and(min-width:1600px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include negativeMargin();
+  }
+}
+
+.clients-cards__item {
+  @media (min-width: 1600px) {
+    @include alingCards(6, 30px);
+  }
+}
+
+.clients-cards__link {
+  @media (min-width: 1600px) {
+    width: 170px;
+    height: 92px;
+  }
+}

@@ -1,0 +1,14 @@
+.team-cards {
+  @media (min-width: 768px) and (max-width: 1599px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.team-cards__item {
+  @media (min-width: 768px) and (max-width: 1599px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}

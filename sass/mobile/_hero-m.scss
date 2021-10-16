@@ -1,7 +1,8 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero {
     max-width: 480px;
     padding: 118px 0px;
+    margin: 0 auto;
   }
 
   .hero__title {

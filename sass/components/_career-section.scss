@@ -1,16 +1,16 @@
 .career-cards {
   @extend %lists;
-  // display: flex;
-  // flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-  // @include negativeMargin();
+  @include negativeMargin();
 }
 
-// .career-cards__item {
-//   @include alingCards(3, 30px);
+.career-cards__item {
+  @include alingCards(3, 30px);
 
-//   /* outline: 2px solid green; */
-// }
+  /* outline: 2px solid green; */
+}
 
 .career-cards__tumb {
   position: relative;

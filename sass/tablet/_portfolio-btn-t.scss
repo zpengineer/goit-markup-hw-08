@@ -1,0 +1,12 @@
+.portfolio-links {
+  @media (min-width: 768px) and (max-width: 1599px) {
+    @include centeredFlex();
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio-links__btn {
+  @media (min-width: 768px) and (max-width: 1599px) {
+    padding: 6px 22px;
+  }
+}

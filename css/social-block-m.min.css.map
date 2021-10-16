@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACE,MAAM,EAAE,SAAS,EAAE,KAAK,EAD1B,AAAA,mBAAmB,AAAC,CAEhB,aAAa,CAAE,IAAI,CAEtB",
-    "sources": [
-        "../sass/mobile/social-block-m.scss"
-    ],
-    "names": [],
-    "file": "social-block-m.min.css"
-}

@@ -1,0 +1,38 @@
+@media screen and (min-width: 1600px) {
+  .page-header__nav {
+    @include centeredFlex(flex, space-between);
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+  }
+
+  .site-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .site-nav__link--current {
+    position: relative;
+
+    color: $accent-color;
+
+    &::after {
+      @include pseudo();
+      left: 0;
+      bottom: -1px;
+
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $accent-color;
+    }
+  }
+}

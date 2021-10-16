@@ -1,0 +1,18 @@
+.section {
+  @media (max-width: 1599px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section--utility {
+  @media (max-width: 1599px) {
+    display: none;
+  }
+}
+
+.section--inverse {
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}

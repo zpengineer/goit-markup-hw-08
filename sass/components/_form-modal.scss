@@ -20,11 +20,17 @@
   pointer-events: none;
 }
 
-// .backdrop__modal {
-//   transform: translate(-50%, -50%) scale(0.9);
-// }
+.backdrop__modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
 
 .backdrop__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms $timing-function;
+
   // max-width: 528px;
   // height: 581px;
 
@@ -168,6 +174,6 @@
 }
 
 .checkbox-label__link {
-  margin-left: 5px;
+  // margin-left: 5px;
   color: $accent-color;
 }

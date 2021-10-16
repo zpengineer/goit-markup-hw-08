@@ -1,6 +1,6 @@
 .footer-form__input {
-  @media (max-width: 480px) {
-    min-width: 100%;
+  @media (max-width: 767px) {
+    width: 100%;
     margin-bottom: 20px;
   }
 }

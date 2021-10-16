@@ -10,7 +10,7 @@
   <body>
     <!--Шапка сайта-->
     <header class="page-header">
-      <div class="container desktop-nav">
+      <div class="container page-header__nav">
         <nav class="main-nav">
 
             <a class="header-logo" href="./index.html">
@@ -92,7 +92,7 @@
 
               <h2 class="container__title container__title--hidden">Наши преимущества</h2>
               
-              <ul class="advantage-cards lists">
+              <ul class="advantage-cards">
 
                 <li class="advantage-cards__item">
 
@@ -659,10 +659,12 @@
                 <use href="./img/icons.svg#icon-checkbox"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю
-            <a href="#" class="checkbox-label__link">
-              Условия договора
-            </a>
+            <span class="checkbox-label__text">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="checkbox-label__link">
+                Условия договора
+              </a>
+            </span>
           </label>
     
           <button type="submit" class="form-modal__btn--submit">Отправить</button>
@@ -684,41 +686,51 @@
         </svg>
       </button>
     
-      <ul class="mobile-menu">
-        <li class="mobile-menu__item">
-          <a href="./index.html" class="mobile-menu__link">Студия</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">Контакты</a>
-        </li>
-      </ul>
+      <div class="mobile-nav-primary">
 
-      <ul class="mobile-contacts">
-        <li class="mobile-contacts__item">
-          <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--active">+38 096 111 11 11</a>
-        </li>
-        <li class="mobile-contacts__item">
-          <a href="mailto:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a>
-        </li>
-      </ul>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Студия</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      
 
-      <ul class="mobile-social">
-        <li class="mobile-social__item">
-          <a href="" class="mobile-social__link">Instagram</a>
-        </li>
-        <li class="mobile-social__item">
-          <a href="" class="mobile-social__link">Twitter</a>
-        </li>
-        <li class="mobile-social__item">
-          <a href="" class="mobile-social__link">Facebook</a>
-        </li>
-        <li class="mobile-social__item">
-          <a href="" class="mobile-social__link">LinkedIn</a>
-        </li>
-      </ul>
+      <div class="mobile-nav-secondary">
+
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--active">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-social">
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      
+
+      
     </div>
 
     <!-- Скрипт для модального окна и шапки -->

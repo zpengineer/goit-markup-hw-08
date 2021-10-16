@@ -1,0 +1,18 @@
+.backdrop__modal {
+  @media screen and(min-width:1600px) {
+    max-width: 528px;
+    height: 581px;
+  }
+}
+
+.form-modal__title {
+  @media screen and(min-width:1600px) {
+    @include fontStyle(700, 20px, 23px, 0.03em);
+  }
+}
+
+.checkbox-label__text {
+  @media screen and(min-width:1600px) {
+    @include fontStyle(400, 14px, 24px, 0.03em);
+  }
+}

@@ -1,0 +1,12 @@
+@media screen and(min-width:1600px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include negativeMargin();
+  }
+
+  .card-set__item {
+    @include alingCards(3, 30px);
+  }
+}

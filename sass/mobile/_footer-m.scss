@@ -1,5 +1,5 @@
 .footer {
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -7,12 +7,12 @@
 
 .footer-social__title,
 .footer-form__title {
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-address__item {
     &:not(:last-child) {
       margin-bottom: 8px;
@@ -21,7 +21,7 @@
 }
 
 .footer-address {
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     text-align: center;
     margin-bottom: 60px;
   }

@@ -1,13 +1,19 @@
-// .portfolio-links {
-//   @media screen and(max-width:480px) {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin: -8px;
-//   }
-// }
+.portfolio-links {
+  @media screen and(max-width:767px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
 
-// .portfolio-links__item {
-//   @media (max-width: 480px) {
-//     display: inline;
-//   }
-// }
+.portfolio-links__item {
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
+.portfolio-links__btn {
+  @media (max-width: 767px) {
+    padding: 6px 22px;
+  }
+}
