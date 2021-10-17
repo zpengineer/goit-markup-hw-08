@@ -14,16 +14,27 @@
   // @include alingCards(3, 30px);
 
   border: 1px solid $border-color;
+  border-radius: 4px;
 
   transition: box-shadow 250ms $timing-function;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: $card-shadow;
+  }
 }
 
 .product {
   // width: 370px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // align-content: stretch;
+
   text-decoration: none;
 
   &:hover,
-  &:focus-within {
+  &:focus {
     box-shadow: $card-shadow;
   }
 
@@ -36,6 +47,7 @@
 
 .product__meta {
   display: block;
+
   padding: 20px 24px 20px 24px;
   text-align: left;
 }

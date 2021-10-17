@@ -68,7 +68,7 @@
   border-radius: 4px;
   cursor: pointer;
 
-  transition: fill 250ms $timing-function, border-color 250ms $timing-function;
+  @include animation(border-color);
 }
 
 .form-field__input {
@@ -84,6 +84,8 @@
 
   &:focus ~ .form-field__icon,
   &:hover ~ .form-field__icon {
+    @include animation(fill);
+
     fill: $accent-color;
   }
 }
@@ -135,7 +137,15 @@
 .checkbox-label {
   @include centeredFlex();
 
+  cursor: pointer;
   margin-bottom: 30px;
+
+  &:focus ~ .checkbox-label__icon,
+  &:hover ~ .checkbox-label__icon {
+    @include animation(fill);
+
+    fill: $accent-color;
+  }
 }
 
 .checkbox-label__input {
@@ -154,7 +164,9 @@
   border: 0;
   clip: rect(0 0 0 0);
 
-  &:checked + .checkbox-label__icon {
+  &:checked + .checkbox-label__icon,
+  &:hover + .checkbox-label__icon,
+  &:focus + .checkbox-label__icon {
     border-radius: 2px;
     background-image: url('../img/check.svg');
     background-size: contain;
@@ -170,7 +182,7 @@
 
   margin-right: 7px;
 
-  transition: fill 250ms $timing-function, background-color 250ms $timing-function;
+  @include animation('fill,  background-color');
 }
 
 .checkbox-label__link {

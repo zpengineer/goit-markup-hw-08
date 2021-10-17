@@ -8,17 +8,16 @@
   .container-row {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 
-  .footer-social {
-    margin-top: 12px;
-    margin-left: 70px;
-  }
+  // .footer-social {
+  //   align-self: center;
+  // }
 
-  .footer-form {
-    margin-left: 93px;
-    margin-top: 12px;
-  }
+  // .footer-form {
+  //   align-self: center;
+  // }
 
   .footer-form__column {
     display: inline-flex;

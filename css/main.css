@@ -495,7 +495,8 @@ textarea {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/bg/header_m@2x-min.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/bg/header_m@2x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/bg/header_m@2x-min.jpg");
   }
 }
 
@@ -579,8 +580,12 @@ textarea {
           box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
 }
 
 .form-field__input {
@@ -595,6 +600,12 @@ textarea {
 
 .form-field__input:focus ~ .form-field__icon,
 .form-field__input:hover ~ .form-field__icon {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: fill;
+  transition-property: fill;
   fill: #2196f3;
 }
 
@@ -685,7 +696,19 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   margin-bottom: 30px;
+}
+
+.checkbox-label:focus ~ .checkbox-label__icon,
+.checkbox-label:hover ~ .checkbox-label__icon {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  fill: #2196f3;
 }
 
 .checkbox-label__input {
@@ -704,7 +727,9 @@ textarea {
   clip: rect(0 0 0 0);
 }
 
-.checkbox-label__input:checked + .checkbox-label__icon {
+.checkbox-label__input:checked + .checkbox-label__icon,
+.checkbox-label__input:hover + .checkbox-label__icon,
+.checkbox-label__input:focus + .checkbox-label__icon {
   border-radius: 2px;
   background-image: url("../img/check.svg");
   background-size: contain;
@@ -717,8 +742,12 @@ textarea {
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: "fill,  background-color";
+  transition-property: "fill,  background-color";
 }
 
 .checkbox-label__link {
@@ -1267,6 +1296,10 @@ textarea {
   color: #2196f3;
 }
 
+.mobile-menu__link--active {
+  color: #2196f3;
+}
+
 .mobile-menu__item:not(:last-child),
 .mobile-contacts__item:not(:last-child) {
   margin-bottom: 32px;
@@ -1692,7 +1725,8 @@ textarea {
 
 @media (min-width: 481px) and (min-device-pixel-ratio: 2), (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (min-resolution: 192dpi), (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/bg/header_t@2x-min.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/bg/header_t@2x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/bg/header_t@2x-min.jpg");
   }
 }
 
@@ -1886,8 +1920,33 @@ textarea {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .card-set__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .product__meta {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
@@ -1899,8 +1958,8 @@ textarea {
 
 @media (min-width: 1200px) {
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -2020,7 +2079,8 @@ textarea {
 
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/bg/header_d@2x-min.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/bg/header_d@2x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/bg/header_d@2x-min.jpg");
   }
 }
 
@@ -2134,12 +2194,6 @@ textarea {
   }
 }
 
-@media (min-width: 1200px) {
-  .social-block--mobile {
-    margin-bottom: 60px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer {
     width: 100%;
@@ -2153,14 +2207,9 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .footer-social {
-    margin-top: 12px;
-    margin-left: 70px;
-  }
-  .footer-form {
-    margin-left: 93px;
-    margin-top: 12px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer-form__column {
     display: -webkit-inline-box;
@@ -2207,10 +2256,29 @@ textarea {
     margin-top: -30px;
   }
   .card-set__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+  }
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .product__meta {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */

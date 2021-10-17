@@ -7,6 +7,17 @@
   }
 
   .card-set__item {
+    display: flex;
     @include alingCards(3, 30px);
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+  }
+
+  .product__meta {
+    flex-grow: 1;
   }
 }
