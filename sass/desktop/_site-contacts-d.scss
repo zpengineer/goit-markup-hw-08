@@ -1,4 +1,4 @@
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .site-contacts {
     display: flex;
   }
@@ -15,5 +15,9 @@
     &:not(:last-child) {
       margin-right: 30px;
     }
+  }
+
+  .site-contacts__icon--table {
+    display: none;
   }
 }

@@ -1,25 +1,27 @@
 .hero {
-  max-width: 1600px;
+  // max-width: 1600px;
   // height: 600px;
   // margin: 0 auto;
   // padding: 200px 0px;
-
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../img/header-img.jpg');
+    url('../img/bg/header_m-min.jpg');
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: $section-bg-color;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../img/bg/header_m@2x-min.jpg');
+  }
+}
+
 .hero__title {
   @include fontStyle(900, 44px, 60px, 0.06em, uppercase);
 
   text-align: center;
-
-  max-width: 650px;
-  margin: 0 auto;
-  margin-bottom: 30px;
 
   color: $white-color;
 }

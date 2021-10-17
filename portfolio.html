@@ -27,13 +27,13 @@
     
                 <ul class="site-nav">
                     <li class="site-nav__item">
-                        <a class="site-nav__link" href="./index.html">
+                        <a class="site-nav__link site-nav__link--current" href="./index.html">
                             Студия
                         </a>
                     </li>
     
                     <li class="site-nav__item">
-                        <a class="site-nav__link site-nav__link--current" href="./portfolio.html">
+                        <a class="site-nav__link" href="./portfolio.html">
                             Портфолио
                         </a>
                     </li>
@@ -50,18 +50,30 @@
             <ul class="site-contacts">
                 <li class="site-contacts__item">
                     <a class="site-contacts__link" href="mailto:info@devstudio.com">
+    
                         <svg class="site-contacts__icon" width="16" height="12">
                             <use href="./img/icons.svg#icon-mail"></use>
                         </svg>
+    
+                        <svg class="site-contacts__icon--table" width="14" height="10">
+                            <use href="./img/icons.svg#icon-mail-t"></use>
+                        </svg>
+    
                         info@devstudio.com
                     </a>
                 </li>
     
                 <li class="site-contacts__item">
                     <a class="site-contacts__link" href="tel:+380961111111">
+    
                         <svg class="site-contacts__icon" width="10" height="16">
                             <use href="./img/icons.svg#icon-phone"></use>
                         </svg>
+    
+                        <svg class="site-contacts__icon--table" width="10" height="14">
+                            <use href="./img/icons.svg#icon-phone-t"></use>
+                        </svg>
+    
                         +38 096 111 11 11
                     </a>
                 </li>
@@ -108,10 +120,12 @@
                     <li class="card-set__item">
                         <a href="" class="product">
                             <div class="product__thumb">
-                                <img src="./img/portfolio/portfolio1.jpg" 
-                                alt="Веб-сайт Технокряк" 
-                                width="370"
-                                height="294">
+                                <picture>
+                                    <source srcset="./img/portfolio/card1_m-min.jpg 1x, ./img/portfolio/card1_m@2x-min.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="./img/portfolio/card1_t-min.jpg 1x, ./img/portfolio/card1_t@2x-min.jpg 2x" media="(max-width: 1199x)">
+                                    <source srcset="./img/portfolio/card1_d-min.jpg 1x, ./img/portfolio/card1_d@2x-min.jpg 2x" media="(min-width: 1200px)">
+                                    <img class="team-cards__img" src="./img/portfolio/card1_m-min.jpg" alt="Веб-сайт Технокряк" >
+                                </picture>
 
                                 <div class="product__overlay">
                                     <p class="product__label">
@@ -131,10 +145,16 @@
                     <li class="card-set__item">
                         <a href="" class="product">
                             <div class="product__thumb">
-                                <img src="./img/portfolio/portfolio2.jpg" 
-                                alt="Постер New Orlean vs Golden Star" 
-                                width="370"
-                                height="294">
+
+                                <picture>
+                                    <source srcset="./img/portfolio/card2_m-min.jpg 1x, ./img/portfolio/card2_m@2x-min.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <source srcset="./img/portfolio/card2_t-min.jpg 1x, ./img/portfolio/card2_t@2x-min.jpg 2x"
+                                        media="(max-width: 1199x)">
+                                    <source srcset="./img/portfolio/card2_d-min.jpg 1x, ./img/portfolio/card2_d@2x-min.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <img class="team-cards__img" src="./img/portfolio/card2_m-min.jpg" alt="Постер New Orlean vs Golden Star" >
+                                </picture>
 
                                 <div class="product__overlay">
                                     <p class="product__label">
@@ -155,10 +175,16 @@
                     <li class="card-set__item"> 
                         <a href="" class="product">
                             <div class="product__thumb">
-                                <img src="./img/portfolio/portfolio3.jpg" 
-                                alt="Приложение для ресторана Seafood" 
-                                width="370"
-                                height="294">
+
+                                <picture>
+                                    <source srcset="./img/portfolio/card3_m-min.jpg 1x, ./img/portfolio/card3_m@2x-min.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <source srcset="./img/portfolio/card3_t-min.jpg 1x, ./img/portfolio/card3_t@2x-min.jpg 2x"
+                                        media="(max-width: 1199x)">
+                                    <source srcset="./img/portfolio/card3_d-min.jpg 1x, ./img/portfolio/card3_d@2x-min.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <img class="team-cards__img" src="./img/portfolio/card3_m-min.jpg" alt="Приложение для ресторана Seafood" >
+                                </picture>
 
                                 <div class="product__overlay">
                                     <p class="product__label">
@@ -179,10 +205,16 @@
                     <li class="card-set__item">
                         <a href="" class="product">
                             <div class="product__thumb">
-                                <img src="./img/portfolio/portfolio4.jpg" 
-                                alt="Проект Prime" 
-                                width="370"
-                                height="294">
+
+                                <picture>
+                                    <source srcset="./img/portfolio/card4_m-min.jpg 1x, ./img/portfolio/card4_m@2x-min.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <source srcset="./img/portfolio/card4_t-min.jpg 1x, ./img/portfolio/card4_t@2x-min.jpg 2x"
+                                        media="(max-width: 1199x)">
+                                    <source srcset="./img/portfolio/card4_d-min.jpg 1x, ./img/portfolio/card4_d@2x-min.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <img class="team-cards__img" src="./img/portfolio/card4_m-min.jpg" alt="Проект Prime" >
+                                </picture>
 
                                 <div class="product__overlay">
                                     <p class="product__label">
@@ -203,10 +235,16 @@
                     <li class="card-set__item">
                         <a href="" class="product">
                             <div class="product__thumb">
-                                <img src="./img/portfolio/portfolio5.jpg" 
-                                alt="Проект Boxes" 
-                                width="370"
-                                height="294">
+
+                                <picture>
+                                    <source srcset="./img/portfolio/card5_m-min.jpg 1x, ./img/portfolio/card5_m@2x-min.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <source srcset="./img/portfolio/card5_t-min.jpg 1x, ./img/portfolio/card5_t@2x-min.jpg 2x"
+                                        media="(max-width: 1199x)">
+                                    <source srcset="./img/portfolio/card5_d-min.jpg 1x, ./img/portfolio/card5_d@2x-min.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <img class="team-cards__img" src="./img/portfolio/card5_m-min.jpg" alt="Проект Boxes">
+                                </picture>
 
                                 <div class="product__overlay">
                                     <p class="product__label">
@@ -227,10 +265,16 @@
                     <li class="card-set__item">
                         <a href="" class="product">
                             <div class="product__thumb">
-                                <img src="./img/portfolio/portfolio6.jpg" 
-                                alt="Inspiration has no Borders" 
-                                width="370"
-                                height="294">
+
+                                <picture>
+                                    <source srcset="./img/portfolio/card6_m-min.jpg 1x, ./img/portfolio/card6_m@2x-min.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <source srcset="./img/portfolio/card6_t-min.jpg 1x, ./img/portfolio/card6_t@2x-min.jpg 2x"
+                                        media="(max-width: 1199x)">
+                                    <source srcset="./img/portfolio/card6_d-min.jpg 1x, ./img/portfolio/card6_d@2x-min.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <img class="team-cards__img" src="./img/portfolio/card6_m-min.jpg" alt="Inspiration has no Borders" >
+                                </picture>
 
                                 <div class="product__overlay">
                                     <p class="product__label">
@@ -251,10 +295,16 @@
                     <li class="card-set__item">
                         <a href="" class="product">
                             <div class="product__thumb">
-                                <img src="./img/portfolio/portfolio7.jpg" 
-                                alt="Издание Limited Edition" 
-                                width="370"
-                                height="294">
+
+                                <picture>
+                                    <source srcset="./img/portfolio/card7_m-min.jpg 1x, ./img/portfolio/card7_m@2x-min.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <source srcset="./img/portfolio/card7_t-min.jpg 1x, ./img/portfolio/card7_t@2x-min.jpg 2x"
+                                        media="(max-width: 1199x)">
+                                    <source srcset="./img/portfolio/card7_d-min.jpg 1x, ./img/portfolio/card7_d@2x-min.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <img class="team-cards__img" src="./img/portfolio/card7_m-min.jpg" alt="Издание Limited Edition" >
+                                </picture>
 
                             <div class="product__overlay">
                                     <p class="product__label">
@@ -275,10 +325,16 @@
                     <li class="card-set__item">
                         <a href="" class="product">
                             <div class="product__thumb">
-                                <img src="./img/portfolio/portfolio8.jpg" 
-                                alt="Проект LAB" 
-                                width="370"
-                                height="294">
+
+                                <picture>
+                                    <source srcset="./img/portfolio/card8_m-min.jpg 1x, ./img/portfolio/card8_m@2x-min.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <source srcset="./img/portfolio/card8_t-min.jpg 1x, ./img/portfolio/card8_t@2x-min.jpg 2x"
+                                        media="(max-width: 1199x)">
+                                    <source srcset="./img/portfolio/card8_d-min.jpg 1x, ./img/portfolio/card8_d@2x-min.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <img class="team-cards__img" src="./img/portfolio/card8_m-min.jpg" alt="Проект LAB">
+                                </picture>
 
                             <div class="product__overlay">
                                     <p class="product__label">
@@ -299,10 +355,16 @@
                     <li class="card-set__item">
                         <a href="" class="product">
                             <div class="product__thumb">
-                                <img src="./img/portfolio/portfolio9.jpg" 
-                                alt="Приложение Growing Business" 
-                                width="370"
-                                height="294">
+
+                                <picture>
+                                    <source srcset="./img/portfolio/card9_m-min.jpg 1x, ./img/portfolio/card9_m@2x-min.jpg 2x"
+                                        media="(max-width: 767px)">
+                                    <source srcset="./img/portfolio/card9_t-min.jpg 1x, ./img/portfolio/card9_t@2x-min.jpg 2x"
+                                        media="(max-width: 1199x)">
+                                    <source srcset="./img/portfolio/card9_d-min.jpg 1x, ./img/portfolio/card9_d@2x-min.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <img class="team-cards__img" src="./img/portfolio/card9_m-min.jpg" alt="Приложение Growing Business" >
+                                </picture>
 
                             <div class="product__overlay">
                                     <p class="product__label">

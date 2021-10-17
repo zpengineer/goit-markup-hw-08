@@ -1,5 +1,5 @@
 .advantage-cards {
-  @media screen and(min-width:1600px) {
+  @media screen and(min-width:1200px) {
     display: flex;
     flex-wrap: wrap;
 
@@ -8,7 +8,7 @@
 }
 
 .advantage-cards__item {
-  @media (min-width: 1600px) {
+  @media (min-width: 1200px) {
     @include alingCards(4, 30px);
 
     // max-width: 270px;

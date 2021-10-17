@@ -48,18 +48,30 @@
           <ul class="site-contacts">
             <li class="site-contacts__item">
               <a class="site-contacts__link" href="mailto:info@devstudio.com">
+
                 <svg class="site-contacts__icon"  width="16" height="12">
                   <use href="./img/icons.svg#icon-mail"></use>
                 </svg>
+
+                <svg class="site-contacts__icon--table" width="14" height="10">
+                  <use href="./img/icons.svg#icon-mail-t"></use>
+                </svg>
+
                 info@devstudio.com
               </a>
             </li>
 
             <li class="site-contacts__item">
               <a class="site-contacts__link" href="tel:+380961111111">
+
                 <svg class="site-contacts__icon" width="10" height="16">
                   <use href="./img/icons.svg#icon-phone"></use>
                 </svg>
+
+                <svg class="site-contacts__icon--table" width="10" height="14">
+                  <use href="./img/icons.svg#icon-phone-t"></use>
+                </svg>
+
                 +38 096 111 11 11
               </a>
             </li>
@@ -168,7 +180,8 @@
 
               <li class="career-cards__item">
                 <div class="career-cards__tumb">
-                  <img src="./img/img_1.jpg" 
+                  <img srcset="./img/img1-min.jpg 1x, ./img/img1@2x-min.jpg 2x"
+                  src="./img/img1-min.jpg" 
                   alt="Программист работает за столом в офисе" 
                   width="370" />
                 
@@ -180,7 +193,8 @@
 
               <li class="career-cards__item">
                 <div class="career-cards__tumb">
-                  <img src="./img/img_2.jpg" 
+                  <img srcset="./img/img2-min.jpg 1x, ./img/img2@2x-min.jpg 2x"
+                  src="./img/img2-min.jpg" 
                   alt="Веб дизайнер разрабатывает интерфейс мобильного приложения" 
                   width="370" />
 
@@ -192,7 +206,8 @@
 
               <li class="career-cards__item">
                 <div class="career-cards__tumb">
-                  <img src="./img/img_3.jpg" 
+                  <img srcset="./img/img3-min.jpg 1x, ./img/img3@2x-min.jpg 2x"
+                  src="./img/img3-min.jpg" 
                   alt="Веб дизайнер работает с графическим планшетом" 
                   width="370" />
 
@@ -216,10 +231,12 @@
 
                 <li class="team-cards__item">
 
-                  <img src="./img/photo/photo_1.jpg" 
-                  alt="Фотография члена команды" 
-                  width="270" 
-                  class="team-cards__img"/>
+                  <picture>
+                    <source srcset="./img/team/photo1_m-min.jpg 1x, ./img/team/photo1_m@2x-min.jpg 2x" type="image" media="(max-width: 767px)">
+                    <source srcset="./img/team/photo1_t-min.jpg 1x, ./img/team/photo1_t@2x-min.jpg 2x" type="image" media="(max-width: 1199x)">
+                    <source srcset="./img/team/photo1_d-min.jpg 1x, ./img/team/photo1_d@2x-min.jpg 2x" type="image" media="(min-width: 1200px)">
+                    <img class="team-cards__img" src="./img/team/photo1_m-min.jpg" alt="фото Николай Кучеренко">
+                  </picture>
 
                   <div class="card-content">
                     <h3 class="card-content__title">
@@ -271,10 +288,12 @@
 
                 <li class="team-cards__item">
 
-                  <img src="./img/photo/photo_2.jpg" 
-                  alt="Фотография члена команды" 
-                  width="270" 
-                  class="team-cards__img"/>
+                  <picture>
+                    <source srcset="./img/team/photo2_m-min.jpg 1x, ./img/team/photo2_m@2x-min.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./img/team/photo2_t-min.jpg 1x, ./img/team/photo2_t@2x-min.jpg 2x" media="(max-width: 1199x)">
+                    <source srcset="./img/team/photo2_d-min.jpg 1x, ./img/team/photo2_d@2x-min.jpg 2x" media="(min-width: 1200px)">
+                    <img class="team-cards__img" src="./img/team/photo2_m-min.jpg" alt="фото Ольга Репина">
+                  </picture>
 
                   <div class="card-content">
                     <h3 class="card-content__title">
@@ -325,10 +344,12 @@
 
                 <li class="team-cards__item">
 
-                  <img src="./img/photo/photo_3.jpg" 
-                  alt="Фотография члена команды" 
-                  width="270" 
-                  class="team-cards__img"/>
+                <picture>
+                  <source srcset="./img/team/photo3_m-min.jpg 1x, ./img/team/photo3_m@2x-min.jpg 2x" media="(max-width: 767px)">
+                  <source srcset="./img/team/photo3_t-min.jpg 1x, ./img/team/photo3_t@2x-min.jpg 2x" media="(max-width: 1199x)">
+                  <source srcset="./img/team/photo3_d-min.jpg 1x, ./img/team/photo3_d@2x-min.jpg 2x" media="(min-width: 1200px)">
+                  <img class="team-cards__img" src="./img/team/photo3_m-min.jpg" alt="фото Николай Тарасов">
+                </picture>
 
                   <div class="card-content">
                     <h3 class="card-content__title">
@@ -378,10 +399,12 @@
 
                 <li class="team-cards__item">
 
-                  <img src="./img/photo/photo_4.jpg" 
-                  alt="Фотография члена команды" 
-                  width="270" 
-                  class="team-cards__img"/>
+                  <picture>
+                    <source srcset="./img/team/photo4_m-min.jpg 1x, ./img/team/photo4_m@2x-min.jpg 2x" media="(max-width: 767px)">
+                    <source srcset="./img/team/photo4_t-min.jpg 1x, ./img/team/photo4_t@2x-min.jpg 2x" media="(max-width: 1199x)">
+                    <source srcset="./img/team/photo4_d-min.jpg 1x, ./img/team/photo4_d@2x-min.jpg 2x" media="(min-width: 1200px)">
+                    <img class="team-cards__img" src="./img/team/photo4_m-min.jpg" alt="фото Михаил Ермаков">
+                  </picture>
 
                   <div class="card-content">
                     <h3 class="card-content__title">
@@ -713,20 +736,21 @@
           </li>
         </ul>
 
-        <ul class="mobile-social">
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link">Instagram</a>
-          </li>
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link">Twitter</a>
-          </li>
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link">Facebook</a>
-          </li>
-          <li class="mobile-social__item">
-            <a href="" class="mobile-social__link">LinkedIn</a>
-          </li>
-        </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        
       </div>
       
 

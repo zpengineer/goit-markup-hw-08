@@ -1,17 +1,17 @@
 .backdrop__modal {
-  @media (min-width: 768px) and (max-width: 1599px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
   }
 }
 
 .form-modal__title {
-  @media (min-width: 768px) and (max-width: 1599px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     @include fontStyle(700, 20px, 30px, 0.03em);
   }
 }
 
 .checkbox-label__text {
-  @media (min-width: 768px) and (max-width: 1599px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     @include fontStyle(400, 12px, 14px, 0.03em);
   }
 }

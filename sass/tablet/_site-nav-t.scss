@@ -1,5 +1,5 @@
 .page-header__nav {
-  @media (min-width: 768px) and (max-width: 1599px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,7 +7,7 @@
 }
 
 .main-nav {
-  @media (min-width: 768px) and (max-width: 1599px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: center;
     // margin-right: auto;
@@ -15,14 +15,14 @@
 }
 
 .site-nav {
-  @media (min-width: 768px) and (max-width: 1599px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     margin-left: 88px;
   }
 }
 
 .site-nav__link {
-  @media (min-width: 768px) and (max-width: 1599px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     // display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -30,7 +30,7 @@
 }
 
 .site-nav__link--current {
-  @media (min-width: 768px) and (max-width: 1599px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     position: relative;
 
     color: $accent-color;

@@ -1,14 +1,14 @@
 .team-cards {
-  @media screen and(min-width:1600px) {
+  @media screen and(min-width:1200px) {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     @include negativeMargin();
   }
 }
 
 .team-cards__item {
-  @media screen and(min-width: 1600px) {
+  @media screen and(min-width: 1200px) {
     @include alingCards(4, 30px);
   }
 }

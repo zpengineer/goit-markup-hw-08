@@ -35,3 +35,9 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: $properties;
 }
+
+@mixin adaptiv-font-m($maxSize, $minSize) {
+  $addSize: $maxSize - $minSize;
+  $maxWidth: 1200 - 320;
+  font-size: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / 1200));
+}

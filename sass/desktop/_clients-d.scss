@@ -1,5 +1,5 @@
 .clients-cards {
-  @media screen and(min-width:1600px) {
+  @media screen and(min-width:1200px) {
     display: flex;
     flex-wrap: wrap;
 
@@ -8,13 +8,13 @@
 }
 
 .clients-cards__item {
-  @media (min-width: 1600px) {
+  @media (min-width: 1200px) {
     @include alingCards(6, 30px);
   }
 }
 
 .clients-cards__link {
-  @media (min-width: 1600px) {
+  @media (min-width: 1200px) {
     width: 170px;
     height: 92px;
   }
